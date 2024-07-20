@@ -1,0 +1,9 @@
+### 모든 카테고리별로 최저가 상품 조회
+GET {{shop}}/api/v1/products/cheapest-per-category
+
+### 최저가 브랜드 조회
+GET {{shop}}/api/v1/products/cheapest-partner
+
+### 특정 카테고리의 최저가 상품 조회
+GET {{shop}}/api/v1/products/cheapest?categoryCode=상의
+

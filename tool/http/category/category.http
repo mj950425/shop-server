@@ -1,0 +1,11 @@
+### 카테고리 생성
+POST {{shop}}/api/v1/categories
+Content-Type: application/json
+
+{
+  "code": "상의"
+}
+
+### 카테고리 전체 조회
+GET {{shop}}/api/v1/categories
+Content-Type: application/json
