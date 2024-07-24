@@ -5,10 +5,6 @@ import com.example.shop.support.CommonFakeRepository
 class FakeCategoryRepository :
     CommonFakeRepository<Category>(),
     CategoryRepository {
-    override fun deleteAllInBatch() {
-        inMemoryDb.clear()
-    }
-
     override fun findAll(): List<Category> = inMemoryDb.values.toList()
 
     override fun save(category: Category): Category {

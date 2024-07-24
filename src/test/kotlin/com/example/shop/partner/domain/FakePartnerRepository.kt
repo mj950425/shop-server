@@ -5,10 +5,6 @@ import com.example.shop.support.CommonFakeRepository
 class FakePartnerRepository :
     CommonFakeRepository<Partner>(),
     PartnerRepository {
-    override fun deleteAllInBatch() {
-        inMemoryDb.clear()
-    }
-
     override fun save(partner: Partner): Partner {
         setId(partner)
         inMemoryDb[partner.id!!] = partner

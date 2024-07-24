@@ -5,10 +5,6 @@ import com.example.shop.support.CommonFakeRepository
 class FakeProductRepository :
     CommonFakeRepository<PartnerProduct>(),
     ProductRepository {
-    override fun deleteAllInBatch() {
-        inMemoryDb.clear()
-    }
-
     override fun findProductById(id: Long): PartnerProduct? = inMemoryDb[id]
 
     override fun save(product: PartnerProduct): PartnerProduct {

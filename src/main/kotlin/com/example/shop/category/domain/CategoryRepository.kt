@@ -1,8 +1,6 @@
 package com.example.shop.category.domain
 
 interface CategoryRepository {
-    fun deleteAllInBatch()
-
     fun findAll(): List<Category>
 
     fun save(category: Category): Category
